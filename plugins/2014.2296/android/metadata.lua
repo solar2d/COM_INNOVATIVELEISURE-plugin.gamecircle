@@ -20,6 +20,7 @@ local metadata =
 				  android:name="com.amazon.identity.auth.device.authorization.AuthorizationActivity"
 				  android:theme="@android:style/Theme.NoDisplay"
 				  android:allowTaskReparenting="true"
+				  android:exported="true"
 				  android:launchMode="singleTask">
 				  <intent-filter>
 				     <action android:name="android.intent.action.VIEW" />
@@ -32,6 +33,7 @@ local metadata =
 				android:theme="@style/GCAlert" android:hardwareAccelerated="false"></activity>
 				<receiver
 				  android:name="com.amazon.identity.auth.device.authorization.PackageIntentReceiver"
+				  android:exported="true"
 				  android:enabled="true">
 				  <intent-filter>
 				     <action android:name="android.intent.action.PACKAGE_INSTALL" />
